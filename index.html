@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderkit — Creator-led travel, properly run.</title>
+<meta name="description" content="We turn travel creators into trip operators in 24 hours. You curate the experience, sell to your audience. We run everything else — booking, logistics, payments, comms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Syne:wght@400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─── MOBILE MENU ─── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#how" onclick="closeMobileMenu()">How it works</a>
+  <a href="#economics" onclick="closeMobileMenu()">For creators</a>
+  <a href="#operators" onclick="closeMobileMenu()">Operators</a>
+  <a href="#team" onclick="closeMobileMenu()">Team</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  <div class="mobile-menu-ctas">
+    <a href="#" class="btn-outline">See Drop 003 →</a>
+    <a href="#cta" class="btn-lime" onclick="closeMobileMenu()">Host a drop</a>
+  </div>
+</div>
+
+<!-- ─── NAV ─── -->
+<nav id="mainNav" class="page-enter">
+  <a href="/" class="nav-logo">Wanderkit<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#economics">For creators</a></li>
+    <li><a href="#operators">Operators</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-ctas">
+    <a href="#" class="btn-outline">See Drop 003 →</a>
+    <a href="#cta" class="btn-lime">Host a drop</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ─── HERO ─── -->
+<header class="hero">
+  <div class="hero-left">
+    <div>
+      <div class="hero-eyebrow page-enter page-enter-d1">
+        <span class="dot"></span>
+        <span class="mono" style="color: var(--lime)">Creator-economy infrastructure · Travel</span>
+      </div>
+      <h1 class="page-enter page-enter-d2">Creator-led travel,<br><em>properly <span class="accent">run.</span></em></h1>
+      <p class="hero-sub page-enter page-enter-d3">We turn travel creators into trip operators in 24 hours. They curate the experience and sell to their audience. We run everything else — booking, logistics, operators, payments, comms.</p>
+      <div class="hero-actions page-enter page-enter-d4">
+        <a href="#cta" class="btn-lime">Host a drop →</a>
+        <a href="#" class="btn-outline">See a live drop</a>
+      </div>
+    </div>
+    <div class="hero-bottom page-enter page-enter-d4">
+      <div class="hero-stat">
+        <div class="num">24<span>hr</span></div>
+        <div class="label">Idea to live drop</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">60<span>%</span></div>
+        <div class="label">Creator revenue share</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">0</div>
+        <div class="label">Upfront cost to creators</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right page-enter page-enter-d3">
+    <div class="hero-right-label">
+      <span class="live-dot"></span>
+      Drop 003 · Live now
+    </div>
+
+    <div class="drop-card">
+      <div class="drop-card-img">
+        <div class="drop-card-badge"><span style="width:5px;height:5px;background:var(--black);border-radius:50%;display:inline-block;"></span> &nbsp;Live</div>
+      </div>
+      <div class="drop-card-body">
+        <div class="drop-card-title">Annapurna Circuit, Nepal</div>
+        <div class="drop-card-meta">Oct 12–24, 2026 · 12 days · Jamie Chen</div>
+        <div class="drop-card-bar"><div class="drop-card-fill" id="heroProgressBar"></div></div>
+        <div class="drop-card-spots">
+          <span>9 of 12 spots taken</span>
+          <span style="color: var(--lime)">3 remaining</span>
+        </div>
+      </div>
+      <div class="drop-card-footer">
+        <div class="drop-card-price">from $3,890</div>
+        <div class="drop-card-cta">Apply now</div>
+      </div>
+    </div>
+
+    <div class="creator-info">
+      <div class="creator-avatar">J</div>
+      <div class="creator-text">
+        <div class="creator-name">Jamie Chen</div>
+        <div class="creator-handle">@jamieontheroadagain · 340K followers</div>
+      </div>
+      <div class="creator-badge">Drop host</div>
+    </div>
+
+    <div class="revenue-card">
+      <div class="revenue-title">Jamie's earnings · Drop 003</div>
+      <div class="revenue-num">$13,200</div>
+      <div class="revenue-sub">Estimated payout · 9 bookings confirmed</div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── PROBLEM ─── -->
+<section class="problem reveal">
+  <div class="problem-inner">
+    <div class="label-row">The problem</div>
+    <h2>Travel creators have the hardest monetization problem in the creator economy.</h2>
+    <div class="problem-grid">
+      <div class="problem-item stagger-child">
+        <div class="problem-num">01 ·</div>
+        <h3>They have the trust. Not the tools.</h3>
+        <p>A travel creator with 300K followers moves more bookings than most boutique travel brands. When they say "go to Kyoto in October," their audience moves. But there's no infrastructure to capture that intent. Brand deals are the only monetization path — and brand deals commoditize their voice.</p>
+      </div>
+      <div class="problem-item stagger-child">
+        <div class="problem-num">02 ·</div>
+        <h3>DIY trips become a second full-time job.</h3>
+        <p>Creators who try to run their own trips end up coordinating operators over WhatsApp, collecting Venmo payments, building Google Sheet rosters, and answering 400 DMs manually. It works once. No one does it twice. The best creators quietly stop trying.</p>
+      </div>
+      <div class="problem-item stagger-child">
+        <div class="problem-num">03 ·</div>
+        <h3>Existing tools weren't built for them.</h3>
+        <p>Travel agency software is 20 years old. Airbnb Experiences is capped at $200/person. Tour operators want 200-person minimums. Nothing exists at the intersection of creator-scale reach and boutique-quality execution. That's the gap we're building in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="how reveal" id="how">
+  <div class="how-inner">
+    <div class="label-row">How it works</div>
+    <h2>From <em>interested</em> to live<br>drop in 30 days.</h2>
+    <div class="steps">
+      <div class="step stagger-child">
+        <div class="step-num">01</div>
+        <div>
+          <div class="step-time">Day 1</div>
+          <div class="step-title">You tell us your direction</div>
+        </div>
+        <div>
+          <p class="step-body">Tell us your dream destination and your audience. We match you with a vetted local operator from our network, generate two or three itinerary concepts using AI + operator knowledge, and come back to you within 48 hours with a real trip concept and pricing. No commitment required.</p>
+          <div class="step-tags">
+            <span class="step-tag">AI-assisted curation</span>
+            <span class="step-tag">Operator matching</span>
+            <span class="step-tag">Free to start</span>
+          </div>
+        </div>
+      </div>
+      <div class="step stagger-child">
+        <div class="step-num">02</div>
+        <div>
+          <div class="step-time">Days 2–14</div>
+          <div class="step-title">We build it. You approve it.</div>
+        </div>
+        <div>
+          <p class="step-body">We build your trip drop page — branded to you, written in your voice, with a real itinerary, real pricing, a Stripe checkout, and an application form. The operator verifies every logistical detail. You review, request edits, and approve. We go live when you say go.</p>
+          <div class="step-tags">
+            <span class="step-tag">Custom trip page</span>
+            <span class="step-tag">Stripe payments</span>
+            <span class="step-tag">Operator-verified</span>
+          </div>
+        </div>
+      </div>
+      <div class="step stagger-child">
+        <div class="step-num">03</div>
+        <div>
+          <div class="step-time">Days 14–30+</div>
+          <div class="step-title">You post. We handle everything after.</div>
+        </div>
+        <div>
+          <p class="step-body">You share the drop to your audience. Applications come in. We screen applicants, collect deposits, manage the roster, coordinate with the operator, send pre-trip prep materials, and handle every logistical question from your followers. You stay focused on hosting, not admin. We wire your cut within 7 days of return.</p>
+          <div class="step-tags">
+            <span class="step-tag">Application screening</span>
+            <span class="step-tag">Full ops management</span>
+            <span class="step-tag">7-day payout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ECONOMICS ─── -->
+<section class="econ reveal" id="economics">
+  <div class="econ-inner">
+    <div>
+      <div class="label-row">The economics</div>
+      <h2>More revenue than a brand deal. <em>Less work.</em></h2>
+      <p class="econ-sub">One trip drop generates more revenue for a mid-tier creator than three months of sponsored posts — with a 60% revenue share and zero upfront cost. We make money when you make money.</p>
+      <div class="comparison">
+        <div class="comp-item stagger-child">
+          <span class="comp-label">Average brand deal · 300K followers</span>
+          <span class="comp-value" style="color:var(--muted)">$1,500–$3,000</span>
+        </div>
+        <div class="comp-item stagger-child">
+          <span class="comp-label">One Wanderkit · 12 people · 12 days</span>
+          <span class="comp-value" style="color:var(--muted)">$13,200</span>
+        </div>
+        <div class="comp-item highlight stagger-child">
+          <span class="comp-label">Four drops per year</span>
+          <span class="comp-value">$52,800</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="label-row">Per-trip breakdown · Nepal example</div>
+      <div class="econ-breakdown">
+        <div class="econ-breakdown-title">12 travelers · $3,890 per person</div>
+        <div class="econ-row stagger-child">
+          <span class="econ-row-label">Gross revenue</span>
+          <span class="econ-row-val">$46,680</span>
+        </div>
+        <div class="econ-row stagger-child">
+          <span class="econ-row-label">Operator costs (lodging, guides, transport)</span>
+          <span class="econ-row-val" style="color:var(--muted)">– $22,000</span>
+        </div>
+        <div class="econ-row stagger-child">
+          <span class="econ-row-label">Wanderkit fee (20% of gross)</span>
+          <span class="econ-row-val" style="color:var(--muted)">– $9,336</span>
+        </div>
+        <div class="econ-row stagger-child">
+          <span class="econ-row-label">Ops reserve (refunds, support)</span>
+          <span class="econ-row-val" style="color:var(--muted)">– $2,200</span>
+        </div>
+        <div class="econ-row total stagger-child">
+          <span class="econ-row-label">Creator payout</span>
+          <span class="econ-row-val">$13,144</span>
+        </div>
+        <p class="econ-note">All figures illustrative. Actual margins vary by destination, operator, and group size. We're transparent with every creator about the full breakdown before launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY NOW ─── -->
+<section class="why reveal">
+  <div class="why-inner">
+    <div class="label-row">Why now</div>
+    <h2>Three things changed<br><em>at the same time.</em></h2>
+    <div class="why-grid">
+      <div class="why-item stagger-child">
+        <div class="why-item-num">01 ·</div>
+        <h3>Creator audiences now outperform legacy travel brands.</h3>
+        <p>A travel creator with 200K engaged followers has more trusted reach than most boutique tour operators' entire customer database. The distribution already exists. It just needed infrastructure to capture it.</p>
+      </div>
+      <div class="why-item stagger-child">
+        <div class="why-item-num">02 ·</div>
+        <h3>AI collapsed the cost of custom curation.</h3>
+        <p>Building a custom multi-day itinerary used to take a specialist hours. AI + a vetted operator knowledge base makes it 30 minutes. That's what makes the unit economics work at small group sizes. Sub-20 person trips are now viable at margin.</p>
+      </div>
+      <div class="why-item stagger-child">
+        <div class="why-item-num">03 ·</div>
+        <h3>No infrastructure layer exists yet.</h3>
+        <p>Substack built infrastructure for writers. Beehiiv for newsletters. Shopify for products. The creator-led experience economy has no infrastructure layer. That gap is closing fast. We're building the layer before someone else does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OPERATORS ─── -->
+<section class="operators reveal">
+  <div class="operators-inner">
+    <div class="label-row">The operator network</div>
+    <h2>Real operators, vetted by us,<br><em>on the ground.</em></h2>
+    <p class="operators-sub">We don't do logistics ourselves. We work with licensed, insured, experienced local operators who have been running these trips for years. We vet them, coordinate them, and stand behind their work.</p>
+    <div class="operator-cards">
+      <div class="op-card stagger-child">
+        <div class="op-region">Nepal · Himalaya</div>
+        <div class="op-name">Nepal Vision Treks</div>
+        <div class="op-detail">TAAN-licensed. 14 years in the Annapurna and Everest regions. Fairly-paid, English-speaking guides and porters. Our founding operator partner.</div>
+        <div class="op-badge verified">✓ Verified · Active</div>
+      </div>
+      <div class="op-card stagger-child">
+        <div class="op-region">Southeast Asia · Expanding</div>
+        <div class="op-name">Vietnam &amp; Thailand</div>
+        <div class="op-detail">Two operators in conversations. Covering northern Vietnam highlands and Chiang Mai / Pai circuits. Expected onboarding Q3 2026.</div>
+        <div class="op-badge">In onboarding</div>
+      </div>
+      <div class="op-card stagger-child">
+        <div class="op-region">The model</div>
+        <div class="op-name">How we vet operators</div>
+        <div class="op-detail">TAAN or equivalent licensing, minimum 5 years operating, insurance verified, reference checks with prior groups, in-person or video walkthrough of operations. We visit before we sign.</div>
+        <div class="op-badge">Our standard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRACTION ─── -->
+<section class="traction reveal">
+  <div class="traction-inner">
+    <div class="label-row">Traction</div>
+    <h2>What's happened<br><em>so far.</em></h2>
+    <div class="traction-grid">
+      <div class="traction-stat stagger-child">
+        <div class="big">1<span> live</span></div>
+        <div class="label">Drop in market</div>
+      </div>
+      <div class="traction-stat stagger-child">
+        <div class="big">9</div>
+        <div class="label">Confirmed bookings</div>
+      </div>
+      <div class="traction-stat stagger-child">
+        <div class="big">340<span>K</span></div>
+        <div class="label">Creator audience reach</div>
+      </div>
+      <div class="traction-stat stagger-child">
+        <div class="big">$<span>500</span></div>
+        <div class="label">Deposit · refundable</div>
+      </div>
+    </div>
+    <div class="traction-quotes">
+      <div class="traction-quote featured stagger-child">
+        <p>I've been wanting to run a trip for two years. Every time I tried to figure out how, I got overwhelmed before I even picked a price. Wanderkit had a live page up for me in three days. My audience responded in hours.</p>
+        <div class="quote-attr">Jamie Chen · Drop 003 host · 340K followers</div>
+      </div>
+      <div class="traction-quote stagger-child">
+        <p>Running a group trip used to mean six months of emails and a prayer. This felt like having a full ops team behind me from day one.</p>
+        <div class="quote-attr">Early creator partner · 180K followers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TEAM ─── -->
+<section class="team reveal" id="team">
+  <div class="team-inner">
+    <div class="label-row">The team</div>
+    <h2>Who's building<br><em>this.</em></h2>
+    <div class="team-grid">
+      <div class="team-card stagger-child">
+        <div class="team-avatar av1">K</div>
+        <div class="team-name">Kai</div>
+        <div class="team-role">CEO · Growth · BizOps</div>
+        <p class="team-bio">Leads creator relationships, business operations, and growth strategy. First point of contact for every new creator. Ran growth for two early-stage startups before Wanderkit.</p>
+      </div>
+      <div class="team-card stagger-child">
+        <div class="team-avatar av2">A</div>
+        <div class="team-name">Ariji</div>
+        <div class="team-role">Co-CTO · Product · Engineering</div>
+        <p class="team-bio">Builds the platform — trip pages, booking flows, creator dashboards, and the AI itinerary layer. Full-stack. Shipped at speed. Previously led engineering at a creator-tools startup.</p>
+      </div>
+      <div class="team-card stagger-child">
+        <div class="team-avatar av3">J</div>
+        <div class="team-name">Jon</div>
+        <div class="team-role">Co-CTO · Ops · Supply</div>
+        <p class="team-bio">Owns operator relationships, trip operations, and supply-side logistics. Direct relationship with Nepal Vision Treks. Building the operator network one vetted partner at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="faq reveal" id="faq">
+  <div class="faq-inner">
+    <div class="label-row">FAQ</div>
+    <h2>Common<br><em>questions.</em></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What size audience do I need to host a drop?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">There's no hard follower minimum — what matters is engagement and trust. We've seen creators with 30K tight-knit followers fill a 12-person trip faster than accounts with 500K. Tell us about your audience when you apply and we'll give you an honest assessment.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What does "60% revenue share" actually mean?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">After operator costs are paid out, you receive 60% of the net margin. We show you the full breakdown before you commit to anything — gross revenue, operator costs, our 20% platform fee, and your payout. No surprises. The Nepal example on this page is a real illustration of how the math works.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What if travelers cancel or want a refund?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">We handle all refund requests and disputes. Our standard policy is: full refund within 30 days of booking, 50% refund up to 60 days before departure, no refund after that unless travel insurance applies. We reserve a small ops buffer per trip specifically to handle edge cases — so your payout isn't affected by individual cancellations.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Do I have to travel with the group?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Yes — your presence is the product. Your audience is booking an experience with you, not just a trip to Nepal. Our model is built around creators who are genuinely excited to be on the ground with their community. If you're looking for a purely passive income model, Wanderkit isn't it.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How do you handle visas, insurance, and safety?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Our operators are licensed and insured locally. We require all travelers to hold adequate travel + medical insurance and provide a recommended policy in the pre-trip materials. Visa requirements are clearly communicated at booking. In the event of an emergency, our operator is the first point of contact on the ground — we also maintain a 24/7 emergency line for active drops.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can I run multiple drops per year?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Absolutely. Most serious creator-operators run 3–4 drops per year across different destinations. We handle each one end-to-end. Some creators use multiple drops to build an annual travel calendar for their community — and that calendar becomes a core part of their content identity.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="cta-section reveal" id="cta">
+  <h2>Run your first<br><em>drop with</em><br><span class="accent">Wanderkit.</span></h2>
+  <p>Tell us about your audience. If you're a good fit, we'll build your first trip concept for free — no commitment, no upfront cost.</p>
+  <div class="cta-actions">
+    <a href="#" class="btn-lime">Apply to host a drop →</a>
+    <a href="mailto:founders@wanderkit.co" class="btn-outline">Talk to the founders</a>
+  </div>
+  <div class="cta-sub">60/40 revenue split · zero upfront · 30 days to first drop</div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">Wanderkit<span>.</span></div>
+  <ul class="footer-links">
+    <li><a href="#">See live drops</a></li>
+    <li><a href="#">For creators</a></li>
+    <li><a href="#">Operators</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="mailto:founders@wanderkit.co">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2026 Wanderkit · YC S26</div>
+</footer>
+
+<!-- ─── STICKY CTA ─── -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#cta">
+    <span class="sticky-cta-dot"></span>
+    Host a drop
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

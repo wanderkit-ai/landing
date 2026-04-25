@@ -1101,7 +1101,31 @@ section { position: relative; z-index: 2; }
   color: var(--lime);
   margin-bottom: 1rem;
 }
-.team-bio { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+.team-bio { font-size: 0.9rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.25rem; }
+.team-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.team-school {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.team-linkedin {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lime);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.team-linkedin:hover { opacity: 0.7; }
 
 /* ─── FAQ ─── */
 .faq {
